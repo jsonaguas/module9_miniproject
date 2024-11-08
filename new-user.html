@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="css/bootstrap.css">
+    <script src = "js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Register</h2>
+    <form class="needs-validation was-validated" novalidate>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+            <div class="invalid-feedback">
+                Please enter your name.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">
+                Please enter a valid email address.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="birthday" class="form-label">Birthday</label>
+            <input type="date" class="form-control" id="birthday" required>
+            <div class="invalid-feedback">
+                Please enter your birthday.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="sex" class="form-label">Sex</label>
+            <select class="form-select" id="sex" required>
+                <option value="">Choose...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select your sex.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="referral" class="form-label">How did you hear about us?</label>
+            <input type="text" class="form-control" id="referral" required>
+            <div class="invalid-feedback">
+                Please let us know how you heard about us.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+</body>
+</html>

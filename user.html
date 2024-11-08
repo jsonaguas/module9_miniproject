@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="css/bootstrap.css">
+    <script src = "js/bootstrap.js"></script>
+    <style>
+              .badge {
+            display: none;
+        }
+        input[type="checkbox"]:checked + .badge {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="mt-2 p-4 bg-success text-white rounded">
+        <h1>Welcome Back, User!</h1>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light m-0 p-0">
+        <div class="container-fluid bg-success-subtle">
+          <button toggler="collapse" class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Settings</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Logout</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row row-cols-12">
+        <div class="col-md-7 ms-2 mt-4">
+                <div class="card mb-3"> <!-- start of container -->
+                    <h2 class="card-header bg-info-subtle text-info border border-info">Your Tasks</h2>
+                        <span class="form-check ms-2">
+                          <input type="checkbox" class="form-check-input" id="hairAppointment">
+                          <label for="editHair" class="form-check-label">
+                          Schedule hair appointment
+                          <a href="#" class="text-decoration-none fw-lighter" data-bs-toggle="modal" 
+                          data-bs-target="#editHair">
+                        Edit</a></span></li>
+                        <!-- Modal -->
+    <div class="modal fade" id="editHair">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h5 class="modal-title" id="hairAppointmentModalLabel">Task to edit: Schedule Hair Appointment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div><!--header-->
+        <div class="modal-body">
+          <!-- Modal body content goes here -->
+          <p>Start Time:</p>
+          <p>End Time: </p>
+          <p>Location: </p>
+          <p>Notes: </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+          Delete</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+          Save changes</button>
+        </div><!-- end of modal-footer -->
+
+      </div><!--content-->
+    </div><!--dialog-->
+    </div>
+                        <span class="form-check ms-2">Make Amazon return
+                            <input type="checkbox" class="form-check-input" id="amazonReturn">
+                            <label for="amazonReturn" class="form-check-label"></label>
+                        </span>
+                        <span class="badge bg-success">Checked</span>
+                        <span class="form-check ms-2">Pick Up Steak
+                          <input type="checkbox" class="form-check-input" id="steakPickup">
+                          <label for="steakPickup" class="form-check-label"></label>
+                        </span>
+
+                </div>
+        </div>
+
+        <div class="col-md-4 g-3 mt-3">
+            <button type="submit" class="btn btn-info-subtle w-100" data-bs-toggle="modal"
+            data-bs-target="#addNewTask">
+                <h2 class="card-header bg-primary-subtle border border-primary text-primary p-2 m-0">Add New Task</h2>
+        </div>
+        <div class="modal fade" id="addNewTask" tabindex="-1" aria-labelledby="addNewTaskLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="addNewTaskLabel">Add New Task</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="mb-3">
+                              <label for="taskName" class="form-label">Task Name</label>
+                              <input type="text" class="form-control" id="taskName" placeholder="Enter task name">
+                          </div>
+                          <div class="mb-3">
+                              <label for="taskDescription" class="form-label">Task Description</label>
+                              <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Save Task</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
