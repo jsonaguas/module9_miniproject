@@ -8,31 +8,34 @@
     <script src = "js/bootstrap.js"></script>
 </head>
 <body>
-  <div class="container mt-5">
-    <h2>Register</h2>
+    <a href="index.html" class="btn btn-primary m-2">Back to Home</a>
+  <div class="container p-0 mt-5 bg-body-tertiary border border-dark rounded-4">
+    <div class="form-header">
+    <h2 class="m-0 p-2 bg-success-subtle border border-top-0 border-start-0 border-end-0 
+    border-black rounded-4">Register New User</h2></div>
     <form class="needs-validation was-validated" novalidate>
-        <div class="mb-3">
+        <div class="mb-3 p-2">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" required>
             <div class="invalid-feedback">
                 Please enter your name.
             </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 p-2">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
+            <input type="email" class="form-control" id="email" placeholder="jason@example.com"required>
             <div class="invalid-feedback">
                 Please enter a valid email address.
             </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 p-2">
             <label for="birthday" class="form-label">Birthday</label>
             <input type="date" class="form-control" id="birthday" required>
             <div class="invalid-feedback">
                 Please enter your birthday.
             </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 p-2">
             <label for="sex" class="form-label">Sex</label>
             <select class="form-select" id="sex" required>
                 <option value="">Choose...</option>
@@ -44,14 +47,14 @@
                 Please select your sex.
             </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 p-2">
             <label for="referral" class="form-label">How did you hear about us?</label>
             <input type="text" class="form-control" id="referral" required>
             <div class="invalid-feedback">
                 Please let us know how you heard about us.
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-primary mb-2 ms-2">Register</button>
     </form>
 </div>
 </body>

@@ -6,14 +6,6 @@
     <title>Document</title>
     <link rel = "stylesheet" href="css/bootstrap.css">
     <script src = "js/bootstrap.js"></script>
-    <style>
-              .badge {
-            display: none;
-        }
-        input[type="checkbox"]:checked + .badge {
-            display: inline-block;
-        }
-    </style>
 
 </head>
 <body>
@@ -28,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Profile</a>
@@ -43,7 +35,7 @@
         </div>
       </div>
     </nav>
-    <div class="row row-cols-12">
+    <div class="row row-cols-12 column-gap-5">
         <div class="col-md-7 ms-2 mt-4">
                 <div class="card mb-3"> <!-- start of container -->
                     <h2 class="card-header bg-info-subtle text-info border border-info">Your Tasks</h2>
@@ -87,7 +79,6 @@
                             <input type="checkbox" class="form-check-input" id="amazonReturn">
                             <label for="amazonReturn" class="form-check-label"></label>
                         </span>
-                        <span class="badge bg-success">Checked</span>
                         <span class="form-check ms-2">Pick Up Steak
                           <input type="checkbox" class="form-check-input" id="steakPickup">
                           <label for="steakPickup" class="form-check-label"></label>
@@ -99,7 +90,7 @@
         <div class="col-md-4 g-3 mt-3">
             <button type="submit" class="btn btn-info-subtle w-100" data-bs-toggle="modal"
             data-bs-target="#addNewTask">
-                <h2 class="card-header bg-primary-subtle border border-primary text-primary p-2 m-0">Add New Task</h2>
+                <h2 class="card-header bg-primary-subtle border border-primary text-primary p-2 mx-auto">Add New Task</h2>
         </div>
         <div class="modal fade" id="addNewTask" tabindex="-1" aria-labelledby="addNewTaskLabel" aria-hidden="true">
           <div class="modal-dialog">
